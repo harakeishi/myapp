@@ -18,7 +18,7 @@ jobs:
       - run: git fetch --force --tags
       - uses: actions/setup-go@v4
         with:
-          go-version: stable
+          go-version: 'stable'
 			- name: Create Tag
         run: |
           echo 'deb [trusted=yes] https://apt.fury.io/caarlos0/ /' | tee /etc/apt/sources.list.d/caarlos0.list
