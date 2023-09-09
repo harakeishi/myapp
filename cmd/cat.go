@@ -4,8 +4,6 @@ Copyright © 2023 NAME HERE <EMAIL ADDRESS>
 package cmd
 
 import (
-	"fmt"
-
 	"github.com/spf13/cobra"
 )
 
@@ -20,7 +18,7 @@ var catCmd = &cobra.Command{
 			return err
 		}
 		for i := 0; i < count; i++ {
-			fmt.Println("ฅ^•ω•^ฅ にゃー")
+			cmd.Println("ฅ^•ω•^ฅ にゃー")
 		}
 		return nil
 	},
