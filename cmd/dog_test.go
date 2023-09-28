@@ -32,7 +32,7 @@ func TestDogCommand(t *testing.T) {
 
 		t.Run(tt.name, func(t *testing.T) {
 			var cmdOutput bytes.Buffer // コマンドの出力をキャプチャするバッファを作成
-			rootCmd.SetOut(&cmdOutput) // Cobraのコマンド出力をバッファに設定
+			dogCmd.SetOut(&cmdOutput) // Cobraのコマンド出力をバッファに設定
 
 			// countフラグにテストケースで設定した値を設定
 			dogCmd.Flag("count").Value.Set(fmt.Sprint(tt.count))
