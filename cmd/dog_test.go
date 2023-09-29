@@ -9,19 +9,16 @@ import (
 func TestDogCommand(t *testing.T) {
 	tests := []struct {
 		name    string // テストケースの名前
-		command string // テストケースで実行するコマンド
 		count   int    // テストケースでcountフラグに設定する値
 		want    string // 期待されるコマンドの出力
 	}{
 		{
 			name:    "TestDogOnce",
-			command: "dog",
 			count:   1,
 			want:    "꒰ ՞•ﻌ•՞ ꒱ わん！\n",
 		},
 		{
 			name:    "TestDogTwice",
-			command: "dog",
 			count:   2,
 			want:    "꒰ ՞•ﻌ•՞ ꒱ わん！\n꒰ ՞•ﻌ•՞ ꒱ わん！\n",
 		},

@@ -9,19 +9,16 @@ import (
 func TestCatCommand(t *testing.T) {
 	tests := []struct {
 		name    string // テストケースの名前
-		command string // テストケースで実行するコマンド
 		count   int    // テストケースでcountフラグに設定する値
 		want    string // 期待されるコマンドの出力
 	}{
 		{
 			name:    "TestCatOnce",
-			command: "cat",
 			count:   1,
 			want:    "ฅ^•ω•^ฅ にゃー\n",
 		},
 		{
 			name:    "TestCatTwice",
-			command: "cat",
 			count:   2,
 			want:    "ฅ^•ω•^ฅ にゃー\nฅ^•ω•^ฅ にゃー\n",
 		},
